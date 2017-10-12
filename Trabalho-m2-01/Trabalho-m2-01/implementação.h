@@ -3,45 +3,27 @@
 
 
 
-template<typename C>
-C dividir_vetor(C vetor[],int inicio, int fim) {
-	int antes_pivo, depois_pivo, aux;
-	antes_pivo = inicio;
-	depois_pivo =fim;
-	pivo = vetor[inicio];
-	while (antes_pivo < depois_pivo) {
-		while (vetor[antes_pivo] <= pivo) {//procurar valores menores que o pivo;
-			antes_pivo++;
-		 }
-		while (vetor[depois_pivo] > pivo) {//procurar valores maiores que o pivo;
-			depois_pivo--;
-		}
 
-		if (antes_pivo < depois_pivo) {
+void insertion_sort(int vetor[], int n) {
+	int eleito, elemento_anterior, auxiliar;
+	for (eleito = 1; eleito <= n - 1; eleito++) {
 
-			aux = vetor[depois_pivo];
-			vetor[antes_pivo] = vetor[depois_pivo];
-			vetor[depois_pivo] = aux;
+		auxiliar = vetor[eleito];
+		elemento_anterior = eleito - 1;//verifica o  elemento antes do vetor eleito
+		while (elemento_anterior >= 0 && auxiliar < vetor[elemento_anterior]) {//continuar trocando os elementos menores que o numero eleito
+
+			vetor[elemento_anterior + 1] = vetor[elemento_anterior];//armazena o vetor maior que o eleito uma posicao a frente
+			elemento_anterior--;
 		}
+		vetor[elemento_anterior + 1] = auxiliar;//armazena o valor eleito ou mantem caso o elemento anterior nao seja maior.
 	}
-	vetor[inicio] = vetor[depois_pivo];
-	vetor[depois_pivo] = pivo;//ver se precisa disso pois la encima o pivo=vetor[inicio
-	return depois_pivo;
 }
 
 
 
 
-template<typename A>
-A quick_sort(A vetor[],int inicio,int fim) {
 
-	if (fim > inicio){
-		pivo = dividir_vetor(vetor,inicio,fim);
-	quick_sort(vetor, inicio, pivo - 1); //ordenar elementos antes do pivo
-	quick_sort(vetor, pivo + 1, fim);//ordenar elementos depois do pivo
-	}
 
-}
 
 
 

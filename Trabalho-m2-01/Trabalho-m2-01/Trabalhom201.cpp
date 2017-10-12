@@ -2,10 +2,14 @@
 //
 
 #include "stdafx.h"
-
+#include "testes.h"
 
 int main()
 {
+
+	teste();
+
+
     return 0;
 }
 
