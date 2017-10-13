@@ -7,7 +7,16 @@
 
 using namespace std;
 
-void mostra_vetor(int vetor[],int n) {
+void mostra_vetor_original(int vetor[], int n) {
+
+	for (int i = 0; i <= n; i++) {
+		cout << "|" << vetor[i] << "|";
+	}
+	cout << endl;
+
+}
+
+void mostra_vetor_ordenado(int vetor[],int n) {
 	
 
 	for (int i = 0; i <= n; i++) {
@@ -27,18 +36,26 @@ void teste() {
 	char vetor_insertion3[] = { 'z','b','u','w','p' };
 	int inicio,fim;
 
+	cout << " estes sao os vetores a ser ordenados por insertion_sort" << endl;
+
+	mostra_vetor_ordenado(vetor_insertion1, 5);
+	cout << endl;
+	//mostra_vetor_ordenado(vetor_insertion2, 5);
+	cout << endl;
+	//mostra_vetor_ordenado(vetor_insertion3, 5);
+	cout << endl;
 
 
 	cout << "Este saos os vetores  ordenados com insertion: inteiro, real e caracteres" << endl;
 	insertion_sort(vetor_insertion1, 5);
 	cout << endl;
-	mostra_vetor(vetor_insertion1, 5);
+	mostra_vetor_ordenado(vetor_insertion1, 5);
 	cout << endl;
 	//insertion_sort(vetor_insertion2, 5);
-	//mostra_vetor(vetor_insertion2, 5);
+	//mostra_vetor_ordenado(vetor_insertion2, 5);
 	cout << endl;
 	//insertion_sort(vetor_insertion3, 5);
-	//mostra_vetor(vetor_insertion3, 5);
+	//mostra_vetor_ordenado(vetor_insertion3, 5);
 	//cout << endl;
 
 	
