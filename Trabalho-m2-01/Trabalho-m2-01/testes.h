@@ -39,7 +39,7 @@ void teste() {
 	cout << endl;
 	//insertion_sort(vetor_insertion3, 5);
 	//mostra_vetor(vetor_insertion3, 5);
-	cout << endl;
+	//cout << endl;
 
 	
 
