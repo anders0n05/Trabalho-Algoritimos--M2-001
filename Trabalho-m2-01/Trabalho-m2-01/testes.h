@@ -50,7 +50,6 @@ void teste() {
 	mostra_vetor_original(vetor_insertion3, 5);
 	cout << endl;
 
-
 	cout << "Este saos os vetores  ordenados com insertion: inteiro, real e caracteres" << endl;
     insertion_sort<int,int>(vetor_insertion1, 5);
 	cout << endl;
@@ -62,30 +61,7 @@ void teste() {
 	insertion_sort<char,int>(vetor_insertion3, 5);
 	mostra_vetor_ordenado<char>(vetor_insertion3, 5);
 	cout << endl;
-
 	
-	cout << " estes sao os vetores a ser ordenados por quick_sort" << endl;
-
-	mostra_vetor_original(vetor_quick1, 5);
-	cout << endl;
-	//mostra_vetor_original(vetor_quick2, 5);
-	cout << endl;
-	//mostra_vetor_original/(vetor_quick3, 5);
-	cout << endl;
-
-
-	cout << "Este saos os vetores  ordenados com quick sort: inteiro, real e caracteres" << endl;
-    quick_sort(vetor_quick1,0, 4);
-	cout << endl;
-	mostra_vetor_ordenado(vetor_quick1, 5);
-	cout << endl;
-	quick_sort(vetor_quick2, 0,4);
-	mostra_vetor_ordenado(vetor_quick2, 5);
-	cout << endl;
-	//quick_sort<char,int>(vetor_quick3, 4);
-	mostra_vetor_ordenado(vetor_quick3, 5);
-	cout << endl;
-
 	system("pause");
 }
 
