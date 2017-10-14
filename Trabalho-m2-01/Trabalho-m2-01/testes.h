@@ -9,7 +9,7 @@ using namespace std;
 
 void mostra_vetor_original(int vetor[], int n) {
 
-	for (int i = 0; i <= n; i++) {
+	for (int i = 0; i < n; i++) {
 		cout << "|" << vetor[i] << "|";
 	}
 	cout << endl;
@@ -19,7 +19,7 @@ void mostra_vetor_original(int vetor[], int n) {
 void mostra_vetor_ordenado(int vetor[],int n) {
 	
 
-	for (int i = 0; i <= n; i++) {
+	for (int i = 0; i < n; i++) {
 		cout << "|" << vetor[i] << "|";
 	}
 	cout << endl;
@@ -36,13 +36,17 @@ void teste() {
 	char vetor_insertion3[] = { 'z','b','u','w','p' };
 	int inicio,fim;
 
+	int vetor_quick1[] = { 0,10,6,7,1 };
+	float vetor_quick2[] = { 10.2,2.5,15.9 , 0.5,9.6 };
+	char vetor_quick3[] = { 'o','p','e','x','p' };
+
 	cout << " estes sao os vetores a ser ordenados por insertion_sort" << endl;
 
-	mostra_vetor_ordenado(vetor_insertion1, 5);
+	mostra_vetor_original(vetor_insertion1, 5);
 	cout << endl;
-	//mostra_vetor_ordenado(vetor_insertion2, 5);
+	//mostra_vetor_original(vetor_insertion2, 5);
 	cout << endl;
-	//mostra_vetor_ordenado(vetor_insertion3, 5);
+	//mostra_vetor_original/(vetor_insertion3, 5);
 	cout << endl;
 
 
@@ -59,7 +63,29 @@ void teste() {
 	//cout << endl;
 
 	
+	cout << " estes sao os vetores a ser ordenados por quick_sort" << endl;
 
+	mostra_vetor_original(vetor_quick1, 5);
+	cout << endl;
+	//mostra_vetor_original(vetor_quick2, 5);
+	cout << endl;
+	//mostra_vetor_original/(vetor_quick3, 5);
+	cout << endl;
+
+
+	cout << "Este saos os vetores  ordenados com quick sort: inteiro, real e caracteres" << endl;
+    quick_sort(vetor_quick1,0, 4);
+	cout << endl;
+	mostra_vetor_ordenado(vetor_quick1, 5);
+	cout << endl;
+	//quick_sort(vetor_quick2, 4);
+	//mostra_vetor_ordenado(vetor_insertion2, 5);
+	cout << endl;
+	//quick_sort(vetor_quick3, 4);
+	//mostra_vetor_ordenado(vetor_quick3, 5);
+	//cout << endl;
+
+	system("pause");
 }
 
 
