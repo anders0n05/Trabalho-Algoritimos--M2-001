@@ -21,13 +21,14 @@ void insertion_sort(J vetor[], int n) {
 
 // funcoes do quick sort |
 
-template<typename X>
+template<typename X,typename AUX>
 void alternar(X vetor[], int i, int j) {
-	int auxiliar = vetor[i];
+	AUX auxiliar = vetor[i];
 	vetor[i] = vetor[j];
 	vetor[j] = auxiliar;
 }
-int dividir(int vetor[], int  comeco, int  fim) {//dividi o vetor ate nao ser mais possivel
+template<typename V>
+   int dividir(V vetor[], int  comeco, int  fim) {//dividi o vetor ate nao ser mais possivel
 	int i = comeco, j = fim;
 
 
@@ -57,7 +58,6 @@ void quick_sort(V vetor[], int comeco, int fim) {
 	if (comeco < fim) {
 
 		int comparador = dividir(vetor, comeco, fim);
-
 		quick_sort(vetor, comeco, comparador - 1);
 		quick_sort(vetor, comparador + 1, fim);
 

@@ -61,7 +61,7 @@ void teste() {
 	cout << endl;
 	insertion_sort<char,int>(vetor_insertion3, 5);
 	mostra_vetor_ordenado<char>(vetor_insertion3, 5);
-	//cout << endl;
+	cout << endl;
 
 	
 	cout << " estes sao os vetores a ser ordenados por quick_sort" << endl;
@@ -79,12 +79,12 @@ void teste() {
 	cout << endl;
 	mostra_vetor_ordenado(vetor_quick1, 5);
 	cout << endl;
-	//quick_sort(vetor_quick2, 0,4);
-	//mostra_vetor_ordenado(vetor_quick2, 5);
+	quick_sort(vetor_quick2, 0,4);
+	mostra_vetor_ordenado(vetor_quick2, 5);
 	cout << endl;
-	//quick_sort(vetor_quick3, 4);
-	//mostra_vetor_ordenado(vetor_quick3, 5);
-	//cout << endl;
+	//quick_sort<char,int>(vetor_quick3, 4);
+	mostra_vetor_ordenado(vetor_quick3, 5);
+	cout << endl;
 
 	system("pause");
 }
