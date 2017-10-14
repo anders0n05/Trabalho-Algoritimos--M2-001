@@ -16,8 +16,8 @@ void mostra_vetor_original(B vetor[], int n) {
 	cout << endl;
 
 }
-template<typename A>
-void mostra_vetor_ordenado(A vetor[],int n) {
+template<typename B>
+void mostra_vetor_ordenado(B vetor[],int n) {
 	
 
 	for (int i = 0; i < n; i++) {
@@ -45,7 +45,7 @@ void teste() {
 
 	mostra_vetor_original(vetor_insertion1, 5);
 	cout << endl;
-	//mostra_vetor_original(vetor_insertion2, 5);
+	mostra_vetor_original(vetor_insertion2, 5);
 	cout << endl;
 	//mostra_vetor_original/(vetor_insertion3, 5);
 	cout << endl;
@@ -56,8 +56,8 @@ void teste() {
 	cout << endl;
 	mostra_vetor_ordenado(vetor_insertion1, 5);
 	cout << endl;
-	//insertion_sort(vetor_insertion2, 5);
-	//mostra_vetor_ordenado(vetor_insertion2, 5);
+	insertion_sort(vetor_insertion2, 5);
+	mostra_vetor_ordenado(vetor_insertion2, 5);
 	cout << endl;
 	//insertion_sort(vetor_insertion3, 5);
 	//mostra_vetor_ordenado(vetor_insertion3, 5);
@@ -79,8 +79,8 @@ void teste() {
 	cout << endl;
 	mostra_vetor_ordenado(vetor_quick1, 5);
 	cout << endl;
-	quick_sort(vetor_quick2, 0,4);
-	mostra_vetor_ordenado(vetor_quick2, 5);
+	//quick_sort(vetor_quick2, 0,4);
+	//mostra_vetor_ordenado(vetor_quick2, 5);
 	cout << endl;
 	//quick_sort(vetor_quick3, 4);
 	//mostra_vetor_ordenado(vetor_quick3, 5);

@@ -3,9 +3,9 @@
 
 
 
-
-void insertion_sort(int vetor[], int n) {
-	int eleito, elemento_anterior, auxiliar;
+template<typename Z,typename A>
+void insertion_sort(Z vetor[], int n) {
+	int eleito; int elemento_anterior; A auxiliar;
 	for (eleito = 1; eleito <= n - 1; eleito++) {
 
 		auxiliar = vetor[eleito];
@@ -21,8 +21,8 @@ void insertion_sort(int vetor[], int n) {
 
 // funcoes do quick sort |
 
-template<typename V>
-void alternar(V vetor[], int i, int j) {
+template<typename X>
+void alternar(X vetor[], int i, int j) {
 	int auxiliar = vetor[i];
 	vetor[i] = vetor[j];
 	vetor[j] = auxiliar;
