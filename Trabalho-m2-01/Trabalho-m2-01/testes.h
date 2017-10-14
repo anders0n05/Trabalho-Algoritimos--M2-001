@@ -6,8 +6,9 @@
 #include"implementação.h"
 
 using namespace std;
+template<typename B>
 
-void mostra_vetor_original(int vetor[], int n) {
+void mostra_vetor_original(B vetor[], int n) {
 
 	for (int i = 0; i < n; i++) {
 		cout << "|" << vetor[i] << "|";
@@ -15,8 +16,8 @@ void mostra_vetor_original(int vetor[], int n) {
 	cout << endl;
 
 }
-
-void mostra_vetor_ordenado(int vetor[],int n) {
+template<typename A>
+void mostra_vetor_ordenado(A vetor[],int n) {
 	
 
 	for (int i = 0; i < n; i++) {
@@ -78,8 +79,8 @@ void teste() {
 	cout << endl;
 	mostra_vetor_ordenado(vetor_quick1, 5);
 	cout << endl;
-	//quick_sort(vetor_quick2, 4);
-	//mostra_vetor_ordenado(vetor_insertion2, 5);
+	quick_sort(vetor_quick2, 0,4);
+	mostra_vetor_ordenado(vetor_quick2, 5);
 	cout << endl;
 	//quick_sort(vetor_quick3, 4);
 	//mostra_vetor_ordenado(vetor_quick3, 5);
