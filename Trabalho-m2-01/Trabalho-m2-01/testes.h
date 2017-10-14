@@ -33,8 +33,8 @@ void mostra_vetor_ordenado(B vetor[],int n) {
 void teste() {
 
 	int vetor_insertion1[] = { 0,3,2,6,1 };
-	float vetor_insertion2[] = { 1.3,2.5,5.6 , 10.3,9.6 };
-	char vetor_insertion3[] = { 'z','b','u','w','p' };
+	float vetor_insertion2[] = { 1.30,2.50,5.60 , 10.30,0.2 };
+	char vetor_insertion3[] = { 'e','d','c','b','a' };
 	int inicio,fim;
 
 	int vetor_quick1[] = { 0,10,6,7,1 };
@@ -47,7 +47,7 @@ void teste() {
 	cout << endl;
 	mostra_vetor_original(vetor_insertion2, 5);
 	cout << endl;
-	//mostra_vetor_original/(vetor_insertion3, 5);
+	mostra_vetor_original(vetor_insertion3, 5);
 	cout << endl;
 
 
@@ -56,11 +56,11 @@ void teste() {
 	cout << endl;
 	mostra_vetor_ordenado<int>(vetor_insertion1, 5);
 	cout << endl;
-	//insertion_sort<float,int>(vetor_insertion2, 5);
-    //	mostra_vetor_ordenado<float>(vetor_insertion2, 5);
+	insertion_sort<float,int>(vetor_insertion2, 5);
+    mostra_vetor_ordenado<float>(vetor_insertion2, 5);
 	cout << endl;
-	//insertion_sort(vetor_insertion3, 5);
-	//mostra_vetor_ordenado(vetor_insertion3, 5);
+	insertion_sort<char,int>(vetor_insertion3, 5);
+	mostra_vetor_ordenado<char>(vetor_insertion3, 5);
 	//cout << endl;
 
 	
