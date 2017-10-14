@@ -3,8 +3,8 @@
 
 
 
-template<typename Z,typename A>
-void insertion_sort(Z vetor[], int n) {
+template< typename J, typename A>
+void insertion_sort(J vetor[], int n) {
 	int eleito; int elemento_anterior; A auxiliar;
 	for (eleito = 1; eleito <= n - 1; eleito++) {
 
@@ -15,7 +15,7 @@ void insertion_sort(Z vetor[], int n) {
 			vetor[elemento_anterior + 1] = vetor[elemento_anterior];//armazena o vetor maior que o eleito uma posicao a frente
 			elemento_anterior--;
 		}
-		vetor[elemento_anterior + 1] = auxiliar;//armazena o valor eleito ou mantem caso o elemento anterior nao seja maior.
+		return vetor[elemento_anterior + 1] = auxiliar;//armazena o valor eleito ou mantem caso o elemento anterior nao seja maior.
 	}
 }
 

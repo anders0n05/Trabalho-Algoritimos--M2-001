@@ -52,12 +52,12 @@ void teste() {
 
 
 	cout << "Este saos os vetores  ordenados com insertion: inteiro, real e caracteres" << endl;
-	insertion_sort(vetor_insertion1, 5);
+    insertion_sort<int,int>(vetor_insertion1, 5);
 	cout << endl;
-	mostra_vetor_ordenado(vetor_insertion1, 5);
+	mostra_vetor_ordenado<int>(vetor_insertion1, 5);
 	cout << endl;
-	insertion_sort(vetor_insertion2, 5);
-	mostra_vetor_ordenado(vetor_insertion2, 5);
+	//insertion_sort<float,int>(vetor_insertion2, 5);
+    //	mostra_vetor_ordenado<float>(vetor_insertion2, 5);
 	cout << endl;
 	//insertion_sort(vetor_insertion3, 5);
 	//mostra_vetor_ordenado(vetor_insertion3, 5);
