@@ -38,7 +38,7 @@ void teste() {
 	int inicio,fim;
 
 	int vetor_quick1[] = { 0,10,6,7,1 };
-	float vetor_quick2[] = { 10.2,2.5,15.9 , 0.5,9.6 };
+	float vetor_quick2[] = { 2.0,2.5,2.6, 0.5,9.6 };
 	char vetor_quick3[] = { 'o','p','e','x','p' };
 
 	cout << " estes sao os vetores a ser ordenados por insertion_sort" << endl;
@@ -62,6 +62,33 @@ void teste() {
 	mostra_vetor_ordenado<char>(vetor_insertion3, 5);
 	cout << endl;
 	
+	cout << " estes sao os vetores a ser ordenados por quick_sort" << endl;
+
+	mostra_vetor_original<int>(vetor_quick1, 5);
+	cout << endl;
+	mostra_vetor_original<float>(vetor_quick2, 5);
+	cout << endl;
+	mostra_vetor_original<char>(vetor_quick3, 5);
+	cout << endl;
+
+
+	cout << "Este saos os vetores  ordenados com quick sort: inteiro, real e caracteres" << endl;
+	quick_sort<int>(vetor_quick1, 0, 4);
+	cout << endl;
+	mostra_vetor_ordenado(vetor_quick1, 5);
+	cout << endl;
+//	quick_sort<float>(vetor_quick2, 0, 4);
+	mostra_vetor_ordenado(vetor_quick2, 5);
+	cout << endl;
+	quick_sort<char>(vetor_quick3,0,4);
+	mostra_vetor_ordenado(vetor_quick3, 5);
+	cout << endl;
+
+
+
+
+
+
 	system("pause");
 }
 
