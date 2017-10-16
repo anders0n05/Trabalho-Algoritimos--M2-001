@@ -75,13 +75,13 @@ void teste() {
 
 	cout << "Este saos os vetores  ordenados com quick sort: inteiro, real e caracteres" << endl;
 	quick_sort(vetor_quick1, inicio, fim);
-	mostra_vetor_ordenado<int>(vetor_quick1, 5);
+	mostra_vetor_ordenado<int>(vetor_quick1, n);
 	cout << endl;
 	quick_sort(vetor_quick2,inicio,fim);
-	mostra_vetor_ordenado<float>(vetor_quick2, 5);
+	mostra_vetor_ordenado<float>(vetor_quick2, n);
 	cout << endl;
 	quick_sort(vetor_quick3, inicio, fim);
-	mostra_vetor_ordenado<char>(vetor_quick3, 5);
+	mostra_vetor_ordenado<char>(vetor_quick3, n);
 	system("pause");
 }
 

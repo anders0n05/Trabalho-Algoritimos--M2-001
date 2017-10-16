@@ -51,8 +51,8 @@ int dividir(V vetor[], int  comeco, int  fim) {//dividi o vetor ate nao ser mais
 		}
 
 	}
-	alternar(vetor, comeco, j);
-	return j;
+	alternar(vetor, comeco, j);//troca os elementos do vetor
+	return j;//retorna a posicao
 }
 
 template<typename V>
@@ -78,7 +78,7 @@ void quick_sort(V vetor[], int comeco, int fim) {
 
 
 
-;
+
 
 
 
