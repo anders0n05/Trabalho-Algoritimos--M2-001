@@ -7,7 +7,7 @@
 #include<time.h>
 #include<stdlib.h>
 using namespace std;
-template<typename E>
+
 
 
 template<typename B>
@@ -41,14 +41,14 @@ void teste() {
 		cout<<"|"<<vetor_int[i]<<"|";
 	}
 	cout << endl;
-         float elemento_float=rand()%10.0;
+         float elemento_float=rand()%10;
 	for (int i = 0; i < 10; i++) {
 		
 		vetor_float[i]=elemento_float;
 		cout<<"|"<<vetor_float[i]<<"|";
 	}
 	char elemento_char=rand()%26;
-	cout<<"endl;
+	cout<<endl;
 		for (int i = 0; i < 100; i++) {
 		
 		vetor_char[i]=elemento_char;
@@ -58,13 +58,13 @@ void teste() {
 	cout << "Este saos os vetores  ordenados com insertion: inteiro, real e caracteres" << endl;
         insertion_sort<int,int>(vetor_int, 50000);
 	cout << endl;
-	mostra_vetor_ordenado<int>(vetor_int, 50000);
+	mostra_vetor<int>(vetor_int, 50000);
 	cout << endl;
 	insertion_sort<float,int>(vetor_float,10);
-        mostra_vetor_ordenado<float>(vetor_float,10);
+        mostra_vetor<float>(vetor_float,10);
 	cout << endl;
 	insertion_sort<char,int>(vetor_char,100);
-	mostra_vetor_ordenado<char>(vetor_char,100);
+	mostra_vetor<char>(vetor_char,100);
 	cout << endl;
 	
 	
@@ -72,13 +72,13 @@ void teste() {
 
 	cout << "Este saos os vetores  ordenados com quick sort: inteiro, real e caracteres" << endl;
 	quick_sort(vetor_int, 0, 50000);
-	mostra_vetor_ordenado<int>(vetor_int, 50000);
+	mostra_vetor<int>(vetor_int, 50000);
 	cout << endl;
 	quick_sort(vetor_float,0,10);
-	mostra_vetor_ordenado<float>(vetor_float, 10);
+	mostra_vetor<float>(vetor_float, 10);
 	cout << endl;
 	quick_sort(vetor_char, 0, 100);
-	mostra_vetor_ordenado<char>(vetor_char3, 100);
+	mostra_vetor<char>(vetor_char, 100);
 	system("pause");
 }
 
